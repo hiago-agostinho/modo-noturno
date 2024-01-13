@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lemon&family=Merriweather:wght@300&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
 body {
     margin: 0;
     display: flex;
@@ -27,11 +29,27 @@ body.dark-mode {
 }
 
 body.dark-mode::before {
-    transform: translateX(100%); /* Move o fundo simulado para a esquerda */
+    transform: translateX(100%);
 }
 
 label {
     text-align: center;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: #050535;
+    transition: color 0.6s ease;
 }
 
 .theme-switch {
